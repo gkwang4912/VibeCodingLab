@@ -14,6 +14,8 @@
 - **即時回饋**：提供執行結果與 AI 建議，引導使用者優化程式碼。
 - **題目管理**：整合 Google Sheets 作為題目與成績的後台資料庫。
 
+網站連結： https://gkwang4912.github.io/VibeCodingLab/
+
 ## 系統架構說明 (Architecture Overview)
 
 本系統採用經典的前後端分離架構。前端負責使用者介面與互動，後端負責核心邏輯、程式碼安全執行與 AI 整合。
@@ -233,3 +235,4 @@ python server.py
 ## 補充說明 (Notes)
 - 本專案為了教學便利，將部分 API Key 與設定檔保留在專案結構中 (如 `api_keys.json`)，在正式開源或部署時請務必加入 `.gitignore`。
 - 後端 `init_gspread_client` 支援 Service Account 與 API Key 兩種模式，請依據部屬環境選擇。
+
