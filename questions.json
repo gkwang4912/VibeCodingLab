@@ -1,0 +1,109 @@
+[
+  {
+    "id": "1",
+    "title": "字串輸入與數字總和",
+    "description": "輸入一個整數 n，計算並輸出 1 到 n 的總和",
+    "difficulty": "入門",
+    "test_cases": [],
+    "hints": [
+      "執行前先口述邏輯，如「從 1 加到 n，累加到 sum」"
+    ],
+    "example_image": "",
+    "learning_goals": [
+      "理解字串操作",
+      "掌握字串方法",
+      "理解數值運算"
+    ],
+    "original_data": {
+      "task_info": "Task 1：字串輸入與數字總和",
+      "description": "輸入一個整數 n，計算並輸出 1 到 n 的總和（執行前先口述邏輯，如「從 1 加到 n，累加到 sum」）",
+      "test_data": "",
+      "example_image": "\r"
+    }
+  },
+  {
+    "id": "2",
+    "title": "最大值比較",
+    "description": "輸入三個整數 a、b、c，判斷並輸出最大值",
+    "difficulty": "初級",
+    "test_cases": [],
+    "hints": [
+      "執行前先用自然語言說明比較順序"
+    ],
+    "example_image": "",
+    "learning_goals": [
+      "掌握條件判斷",
+      "理解比較運算子",
+      "理解邏輯運算"
+    ],
+    "original_data": {
+      "task_info": "Task 2：最大值比較",
+      "description": "輸入三個整數 a、b、c，判斷並輸出最大值（執行前先用自然語言說明比較順序）",
+      "test_data": "",
+      "example_image": "\r"
+    }
+  },
+  {
+    "id": "3",
+    "title": "字串反轉與回文判斷（String Reversal & Palindrome Check）",
+    "description": "輸入一個字串，判斷是否為回文",
+    "difficulty": "中級",
+    "test_cases": [],
+    "hints": [
+      "正反讀相同；實作時需思考大小寫與空白處理"
+    ],
+    "example_image": "",
+    "learning_goals": [
+      "理解字串操作",
+      "掌握字串方法",
+      "理解字串切片"
+    ],
+    "original_data": {
+      "task_info": "Task 3：字串反轉與回文判斷（String Reversal & Palindrome Check）",
+      "description": "輸入一個字串，判斷是否為回文（正反讀相同；實作時需思考大小寫與空白處理）",
+      "test_data": "",
+      "example_image": "\r"
+    }
+  },
+  {
+    "id": "4",
+    "title": "數列分析與平均值比較（List Analysis & Average Evaluation）",
+    "description": "輸入兩組數列，計算各自平均值並輸出哪一組較高",
+    "difficulty": "中級",
+    "test_cases": [],
+    "hints": [
+      "先以自然語言描述步驟，再實作與修正"
+    ],
+    "example_image": "",
+    "learning_goals": [
+      "理解邏輯運算",
+      "掌握 if-elif-else",
+      "理解串列操作"
+    ],
+    "original_data": {
+      "task_info": "Task 4：數列分析與平均值比較（List Analysis & Average Evaluation）",
+      "description": "輸入兩組數列，計算各自平均值並輸出哪一組較高（先以自然語言描述步驟，再實作與修正）",
+      "test_data": "",
+      "example_image": "\r"
+    }
+  },
+  {
+    "id": "5",
+    "title": "星號遞增輸出（Star Pattern Increasing Display）",
+    "description": "輸入一個整數 n，依序輸出 1 到 n 行星號，每一行星號數量與行數相同",
+    "difficulty": "入門",
+    "test_cases": [],
+    "hints": [],
+    "example_image": "https://drive.google.com/file/d/12mvJPltSKwsRsLD6MqfriNiwAzRyJI2n/view?usp=drive_link",
+    "learning_goals": [
+      "理解基礎 Python 語法",
+      "掌握程式邏輯思維"
+    ],
+    "original_data": {
+      "task_info": "Task 5：星號遞增輸出（Star Pattern Increasing Display）",
+      "description": "輸入一個整數 n，依序輸出 1 到 n 行星號，每一行星號數量與行數相同",
+      "test_data": "",
+      "example_image": "https://drive.google.com/file/d/12mvJPltSKwsRsLD6MqfriNiwAzRyJI2n/view?usp=drive_link"
+    }
+  }
+]
