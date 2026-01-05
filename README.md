@@ -25,18 +25,18 @@
 
 ```mermaid
 graph TD
-    User((使用者)) -->|HTTPS| Frontend[Frontend (Browser)]
+    User((使用者)) -->|HTTPS| Frontend["Frontend (Browser)"]
     
     subgraph "Local / Server Environment"
-        Frontend -->|API Request| Flask[Backend Server (Flask)]
-        Flask -->|Safe Execute| Sandbox[Python Sandbox]
-        Flask -->|Read/Write| Config[JSON Config & Data]
+        Frontend -->|API Request| Flask["Backend Server (Flask)"]
+        Flask -->|Safe Execute| Sandbox["Python Sandbox"]
+        Flask -->|Read/Write| Config["JSON Config & Data"]
     end
     
     subgraph "External Services"
-        Flask -->|Generate Content| Gemini[Google Gemini API]
-        Flask -->|Sync Data| GSheets[(Google Sheets)]
-        Frontend -.->|Tunneling| Ngrok[Ngrok Tunnel]
+        Flask -->|Generate Content| Gemini["Google Gemini API"]
+        Flask -->|Sync Data| GSheets[("Google Sheets")]
+        Frontend -.->|Tunneling| Ngrok["Ngrok Tunnel"]
     end
     
     style Frontend fill:#f9f,stroke:#333,stroke-width:2px
