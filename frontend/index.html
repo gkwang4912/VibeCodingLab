@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Coding Lab -- Python 智能程式診斷平台</title>
+  <meta name="description" content="Python 智能程式診斷平台，AI 引導式學習與即時程式碼評分" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="lib/github.min.css" />
+</head>
+
+<body>
+  <div class="app-layout" id="appLayout">
+
+    <!-- ========== 工具列 ========== -->
+    <header class="toolbar" id="toolbar">
+      <span class="toolbar__logo">Vibe Coding Lab</span>
+      <span class="toolbar__sep"></span>
+      <span class="toolbar__label">題目</span>
+      <select class="toolbar__select" id="questionSelect">
+        <option value="">載入中...</option>
+      </select>
+      <span class="toolbar__spacer"></span>
+
+      <button class="toolbar__btn toolbar__btn--run" id="btnRun">
+        <span id="btnRunIcon">&#9654;</span> 執行
+      </button>
+      <button class="toolbar__btn toolbar__btn--score" id="btnScore">
+        <span id="btnScoreIcon">&#9733;</span> AI 評分
+      </button>
+
+      <span class="toolbar__sep"></span>
+
+      <div class="toolbar__status" id="connStatus">
+        <span class="toolbar__status-dot" id="connDot"></span>
+        <span class="toolbar__status-text" id="connText">偵測中</span>
+      </div>
+
+      <div class="theme-toggle">
+        <button class="theme-toggle__btn theme-toggle__btn--active" id="themeLight" title="亮色">Li</button>
+        <button class="theme-toggle__btn" id="themeDark" title="暗色">Dk</button>
+      </div>
+    </header>
+
+    <!-- ========== 主區域 ========== -->
+    <div class="main-body" id="mainBody">
+
+      <!-- ---- 左側 Sidebar ---- -->
+      <aside class="sidebar-left" id="sidebarLeft">
+        <div class="sidebar-left__header">
+          <span class="sidebar-left__header-label">題目詳情</span>
+          <span class="sidebar-left__header-spacer"></span>
+          <button class="sidebar-left__collapse" id="sidebarLeftToggle" title="收合">&laquo;</button>
+        </div>
+        <div class="sidebar-left__content" id="questionPanel">
+          <div class="empty-state" id="questionEmpty">
+            <div class="empty-state__icon">&#128196;</div>
+            <div>尚無題目</div>
+          </div>
+          <!-- 動態填入的題目內容 -->
+          <div id="questionDetails" style="display:none">
+            <span class="question-badge" id="questionBadge"></span>
+            <h2 class="question-title" id="questionTitle"></h2>
+            <div>
+              <div class="section-label">題目說明</div>
+              <div class="question-desc" id="questionDesc"></div>
+            </div>
+            <div id="testCasesSection" style="display:none">
+              <div class="section-label">測試案例</div>
+              <div id="testCasesList"></div>
+            </div>
+            <div id="hintsSection" style="display:none">
+              <div class="section-label">提示</div>
+              <div id="hintsList" class="question-desc"></div>
+            </div>
+            <div id="goalsSection" style="display:none">
+              <div class="section-label">學習目標</div>
+              <div id="goalsList"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ---- 中央面板 ---- -->
+      <main class="center-panel" id="centerPanel">
+        <!-- 編輯器 -->
+        <section class="editor-panel" id="editorPanel">
+          <div class="editor-panel__header">
+            <span class="editor-panel__dot" id="editorDot"></span>
+            <span class="editor-panel__filename" id="editorFilename">solution.py</span>
+            <span class="editor-panel__lang">Python 3</span>
+          </div>
+          <div class="editor-panel__body">
+            <div id="codeEditorContainer" style="width:100%; height:100%; position:relative;"></div>
+          </div>
+        </section>
+        <!-- 終端機 -->
+        <section class="terminal-panel" id="terminalPanel">
+          <div class="terminal-panel__header">
+            <span class="terminal-panel__label">終端機</span>
+            <span class="terminal-panel__status terminal-panel__status--idle" id="terminalStatus">就緒</span>
+            <button class="terminal-panel__clear" id="terminalClear">清除</button>
+          </div>
+          <div class="terminal-panel__body" id="terminalBody">
+            <div id="termContentOutput" style="height:100%; display:block;">
+              <pre id="terminalOutput"><span class="terminal-info">-- 按「執行」開始 --</span></pre>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ---- 右側 AI Sidebar ---- -->
+      <aside class="sidebar-right" id="sidebarRight">
+        <!-- Tab 列 -->
+        <div class="ai-tabs">
+          <button class="ai-tabs__tab ai-tabs__tab--active" data-tab="score">評分</button>
+          <button class="ai-tabs__tab" data-tab="chat">對話</button>
+          <button class="ai-tabs__tab" data-tab="progress">進度</button>
+        </div>
+
+        <div class="ai-body" id="aiBody">
+          <!-- === 評分 Tab === -->
+          <div class="ai-tab-content ai-tab-content--active" id="tabScore">
+            <div class="score-main" id="scoreMain">
+              <div class="score-main__label">總分</div>
+              <div class="score-main__value" id="scoreValue">--</div>
+              <div class="score-main__max">/ 100</div>
+              <div class="score-main__bar">
+                <div class="score-main__bar-fill" id="scoreBarFill" style="width:0%"></div>
+              </div>
+            </div>
+            <div class="sub-scores" id="subScores">
+              <div class="sub-score-card">
+                <div class="sub-score-card__label">時間複雜度</div>
+                <div class="sub-score-card__value" id="subTime">--</div>
+                <div class="sub-score-card__max">/ 10</div>
+              </div>
+              <div class="sub-score-card">
+                <div class="sub-score-card__label">空間複雜度</div>
+                <div class="sub-score-card__value" id="subSpace">--</div>
+                <div class="sub-score-card__max">/ 10</div>
+              </div>
+              <div class="sub-score-card">
+                <div class="sub-score-card__label">可讀性</div>
+                <div class="sub-score-card__value" id="subRead">--</div>
+                <div class="sub-score-card__max">/ 10</div>
+              </div>
+              <div class="sub-score-card">
+                <div class="sub-score-card__label">穩定性</div>
+                <div class="sub-score-card__value" id="subStab">--</div>
+                <div class="sub-score-card__max">/ 10</div>
+              </div>
+            </div>
+            <div class="ai-feedback" id="aiFeedback">
+              <div class="ai-feedback__label">AI 回饋</div>
+              <div class="ai-feedback__divider"></div>
+              <div class="ai-feedback__text" id="feedbackText">按「AI 評分」取得回饋</div>
+            </div>
+          </div>
+
+          <!-- === 對話 Tab === -->
+          <div class="ai-tab-content" id="tabChat">
+            <div class="chat-messages" id="chatMessages">
+              <div class="chat-bubble chat-bubble--ai">你好！我是你的 AI 程式教學助手，有什麼問題都可以問我。</div>
+            </div>
+            <div class="chat-input-area">
+              <input type="text" class="chat-input-area__input" id="chatInput" placeholder="輸入你的問題..." />
+              <button class="chat-input-area__send" id="chatSend" title="送出">&#10148;</button>
+            </div>
+          </div>
+
+          <!-- === 進度 Tab === -->
+          <div class="ai-tab-content" id="tabProgress">
+            <div class="progress-summary" id="progressSummary">
+              <div class="progress-summary__label">完成進度</div>
+              <div class="progress-summary__bar">
+                <div class="progress-summary__bar-fill" id="progressBarFill" style="width:0%"></div>
+              </div>
+              <div class="progress-summary__text" id="progressText">0 / 0 題完成</div>
+            </div>
+            <div class="progress-list" id="progressList">
+              <div class="empty-state">
+                <div class="empty-state__icon">&#128202;</div>
+                <div>尚無紀錄</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ========== 底部狀態列 ========== -->
+    <footer class="statusbar" id="statusbar">
+      <span class="statusbar__item" id="statTime">學習時間 0:00</span>
+      <span class="statusbar__sep"></span>
+      <span class="statusbar__item" id="statRuns">執行 0 次</span>
+      <span class="statusbar__sep"></span>
+      <span class="statusbar__item" id="statErrors">錯誤 0</span>
+      <span class="statusbar__sep"></span>
+      <span class="statusbar__item" id="statFocus">專注 --</span>
+      <span class="statusbar__spacer"></span>
+      <span class="statusbar__item statusbar__item--accent" id="statQuestion">--</span>
+      <span class="statusbar__sep"></span>
+      <span class="statusbar__item statusbar__item--success" id="statBackend">後端 偵測中</span>
+    </footer>
+  </div>
+
+  <!-- Toast 容器 -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Input Modal -->
+  <div class="modal-overlay" id="inputModal" style="display: none;">
+    <div class="modal">
+      <h3 class="modal__title">程式要求輸入</h3>
+      <div class="modal__body">
+        <p id="inputPrompt" class="input-prompt"></p>
+        <input type="text" id="inputRequestVal" class="modal__input" placeholder="請輸入內容..." autocomplete="off">
+      </div>
+      <div class="modal__footer">
+        <button class="modal__btn" id="inputSubmit" style="width: auto; padding: 0 1.5rem;">送出</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 學生姓名 Modal -->
+  <div class="modal-overlay" id="nameModal" style="display:none">
+    <div class="modal">
+      <div class="modal__title">歡迎！請輸入你的姓名</div>
+      <input type="text" class="modal__input" id="nameInput" placeholder="例如：王小明" maxlength="20" />
+      <button class="modal__btn" id="nameSubmit">開始學習</button>
+    </div>
+  </div>
+
+  <!-- 腳本載入順序 -->
+  <script src="lib/marked.min.js"></script>
+  <script src="lib/highlight.min.js"></script>
+  <!-- 移除 python.min.js (如果存在且不使用) -->
+  <script src="lib/editor.js"></script>
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

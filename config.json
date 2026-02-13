@@ -1,0 +1,9 @@
+{
+  "openai_api_key": "your_apiKey_here",
+  "model_name": "gpt-4o-mini",
+  "api_settings": {
+    "temperature": 0,
+    "max_tokens": 2000,
+    "timeout": 30
+  }
+}

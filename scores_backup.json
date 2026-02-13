@@ -1,0 +1,17 @@
+[
+  {
+    "action": "submit_score",
+    "student_name": "GK",
+    "question_id": "1",
+    "score": 70,
+    "code": "Height = int(input('請輸入身高'))/100\nWeight = int(input('請輸入體重'))\n\nBMI = Weight /Height **2\nprint(BMI)",
+    "timestamp": "2026-02-13T19:02:32.956965",
+    "detailed_scores": {
+      "time_complexity": 10,
+      "space_complexity": 10,
+      "readability": 6,
+      "stability": 4
+    },
+    "saved_locally": true
+  }
+]

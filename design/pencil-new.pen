@@ -1,0 +1,3057 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "IYEyM",
+      "x": 0,
+      "y": 0,
+      "name": "Desktop Main - Light Mode",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "JsNw6",
+          "name": "Toolbar",
+          "width": "fill_container",
+          "height": 48,
+          "fill": "#F1F5F9",
+          "gap": 16,
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "kXsUK",
+              "name": "Logo",
+              "fill": "#0891B2",
+              "content": "PyDiag",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "5j83Z",
+              "name": "sep1",
+              "fill": "#E2E8F0",
+              "width": 1,
+              "height": 24
+            },
+            {
+              "type": "text",
+              "id": "mUTqy",
+              "name": "qLabel",
+              "fill": "#64748B",
+              "content": "顎目",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "4X3c4",
+              "name": "Question Selector",
+              "height": 32,
+              "fill": "#E2E8F0",
+              "cornerRadius": 6,
+              "gap": 8,
+              "padding": [
+                0,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0JZol",
+                  "name": "qText",
+                  "fill": "#0F172A",
+                  "content": "Q1 - Hello Python",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "dLBd5",
+                  "name": "qChevron",
+                  "fill": "#94A3B8",
+                  "content": "v",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ekCL2",
+              "name": "spacer",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "K6YIV",
+              "name": "Run Button",
+              "height": 32,
+              "fill": "#059669",
+              "cornerRadius": 6,
+              "gap": 6,
+              "padding": [
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TGzkX",
+                  "name": "runIcon",
+                  "fill": "#FFFFFF",
+                  "content": "執行",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TDqV5",
+              "name": "Score Button",
+              "height": 32,
+              "fill": "#0891B2",
+              "cornerRadius": 6,
+              "gap": 6,
+              "padding": [
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0yEpn",
+                  "name": "scoreText",
+                  "fill": "#FFFFFF",
+                  "content": "AI 評分",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "LwbUa",
+              "name": "sep2",
+              "fill": "#E2E8F0",
+              "width": 1,
+              "height": 24
+            },
+            {
+              "type": "ellipse",
+              "id": "gmN51",
+              "name": "statusDot",
+              "fill": "#059669",
+              "width": 8,
+              "height": 8
+            },
+            {
+              "type": "text",
+              "id": "xIyLJ",
+              "name": "statusText",
+              "fill": "#94A3B8",
+              "content": "已連線",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "DtLcw",
+              "name": "Theme Toggle",
+              "height": 28,
+              "fill": "#E2E8F0",
+              "cornerRadius": 14,
+              "gap": 4,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kXvic",
+                  "name": "ltSun",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#0891B2",
+                  "cornerRadius": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z6YbS",
+                      "name": "ltSunIcon",
+                      "fill": "#FFFFFF",
+                      "content": "Li",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JyDiq",
+                  "name": "ltMoon",
+                  "width": 24,
+                  "height": 24,
+                  "cornerRadius": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tWWjs",
+                      "name": "ltMoonIcon",
+                      "fill": "#94A3B8",
+                      "content": "Dk",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fCOQE",
+          "name": "Main Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OJSts",
+              "name": "Left Sidebar",
+              "width": 280,
+              "height": "fill_container",
+              "fill": "#F1F5F9",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "N8SVr",
+                  "name": "Sidebar Header",
+                  "width": "fill_container",
+                  "height": 40,
+                  "fill": "#E2E8F0",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HDnlw",
+                      "name": "shLabel",
+                      "fill": "#64748B",
+                      "content": "顎目詳情",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o7UNy",
+                      "name": "shSpacer",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "G12i6",
+                      "name": "shCollapse",
+                      "fill": "#94A3B8",
+                      "content": "<<",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C4DPR",
+                  "name": "Sidebar Content",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Fetdl",
+                      "name": "Difficulty Badge",
+                      "height": 24,
+                      "fill": "#059669",
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yXROl",
+                          "name": "diffText",
+                          "fill": "#FFFFFF",
+                          "content": "初級",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZRs72",
+                      "name": "Question Title",
+                      "fill": "#0F172A",
+                      "content": "Hello Python!",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yholo",
+                      "name": "Description",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kA9ZZ",
+                          "name": "descLabel",
+                          "fill": "#64748B",
+                          "content": "顎目說明",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "hVMmw",
+                          "name": "descBody",
+                          "fill": "#475569",
+                          "content": "撰寫一個 Python 程式，印出三行內容：\n1. Hello, Python!\n2. I am learning basic output\n3. This is question 1",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9xJuP",
+                      "name": "Test Cases",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q0ldk",
+                          "name": "testLabel",
+                          "fill": "#64748B",
+                          "content": "測試案例",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "J6sOF",
+                          "name": "Test Case 1",
+                          "width": "fill_container",
+                          "fill": "#E2E8F0",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "kFZO9",
+                              "name": "tc1In",
+                              "fill": "#64748B",
+                              "content": "輸入：（無）",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "BSDmj",
+                              "name": "tc1Out",
+                              "fill": "#0891B2",
+                              "content": "輸出：Hello, Python!",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "6srL5",
+                          "name": "Test Case 2",
+                          "width": "fill_container",
+                          "fill": "#E2E8F0",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oV5c5",
+                              "name": "tc2In",
+                              "fill": "#64748B",
+                              "content": "輸入：（無）",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "cKG4K",
+                              "name": "tc2Out",
+                              "fill": "#0891B2",
+                              "content": "輸出：I am learning...",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QhhyC",
+                      "name": "Learning Goals",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TuI91",
+                          "name": "goalsLabel",
+                          "fill": "#64748B",
+                          "content": "學習目標",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Gmpf2",
+                          "name": "goal1",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "padding": [
+                            6,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "8yDGz",
+                              "name": "g1check",
+                              "fill": "#0891B2",
+                              "content": "o",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "nRk8t",
+                              "name": "g1text",
+                              "fill": "#475569",
+                              "content": "掌握 print() 函式",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yQ83S",
+                          "name": "goal2",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "padding": [
+                            6,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "TEK9m",
+                              "name": "g2check",
+                              "fill": "#0891B2",
+                              "content": "o",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tOL7e",
+                              "name": "g2text",
+                              "fill": "#475569",
+                              "content": "正確使用字串常值",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "8swHk",
+                          "name": "goal3",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "padding": [
+                            6,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "KvtNP",
+                              "name": "g3check",
+                              "fill": "#0891B2",
+                              "content": "o",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "64KeV",
+                              "name": "g3text",
+                              "fill": "#475569",
+                              "content": "理解程式執行流程",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7A8JT",
+              "name": "Center Panel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#0F172A",
+              "layout": "vertical",
+              "gap": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pQYQI",
+                  "name": "Editor Panel",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFF",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rIS2L",
+                      "name": "Editor Header",
+                      "width": "fill_container",
+                      "height": 36,
+                      "fill": "#F1F5F9",
+                      "gap": 12,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cdkku",
+                          "name": "ehTab",
+                          "height": 36,
+                          "gap": 6,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "xpSLO",
+                              "name": "ehDot",
+                              "fill": "#0891B2",
+                              "width": 8,
+                              "height": 8
+                            },
+                            {
+                              "type": "text",
+                              "id": "uHMNw",
+                              "name": "ehFile",
+                              "fill": "#0F172A",
+                              "content": "main.py",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kwZcx",
+                          "name": "ehSpacer",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "H4mj3",
+                          "name": "ehLang",
+                          "fill": "#94A3B8",
+                          "content": "Python 3.12",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kVYuA",
+                      "name": "Editor Body",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#F8FAFC",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Zze2Q",
+                          "name": "line1",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6bwmn",
+                              "name": "ln1",
+                              "fill": "#94A3B8",
+                              "content": "1",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tDS32",
+                              "name": "code1kw",
+                              "fill": "#0891B2",
+                              "content": "print",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "NSOQt",
+                              "name": "code1str",
+                              "fill": "#D97706",
+                              "content": "(\"Hello, Python!\")",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sIzkW",
+                          "name": "line2",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "9NQ31",
+                              "name": "ln2",
+                              "fill": "#94A3B8",
+                              "content": "2",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "OZIsD",
+                              "name": "code2kw",
+                              "fill": "#0891B2",
+                              "content": "print",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dDRrk",
+                              "name": "code2str",
+                              "fill": "#D97706",
+                              "content": "(\"I am learning...\")",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Xo2dW",
+                          "name": "line3",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jk1Dt",
+                              "name": "ln3",
+                              "fill": "#94A3B8",
+                              "content": "3",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "woXfz",
+                              "name": "code3kw",
+                              "fill": "#0891B2",
+                              "content": "print",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "RMOxi",
+                              "name": "code3str",
+                              "fill": "#D97706",
+                              "content": "(\"This is Q1\")",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kxwyq",
+                          "name": "line4",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dKGgC",
+                              "name": "ln4",
+                              "fill": "#94A3B8",
+                              "content": "4",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "rectangle",
+                              "id": "qFQzG",
+                              "name": "cursor",
+                              "fill": "#0891B2",
+                              "width": 8,
+                              "height": 16
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "R9HL1",
+                  "name": "termDivider",
+                  "fill": "#E2E8F0",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "WpKTS",
+                  "name": "Terminal Panel",
+                  "width": "fill_container",
+                  "height": 280,
+                  "fill": "#FAFBFC",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "uM6AJ",
+                      "name": "Terminal Header",
+                      "width": "fill_container",
+                      "height": 32,
+                      "fill": "#F1F5F9",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ux9lP",
+                          "name": "thLabel",
+                          "fill": "#64748B",
+                          "content": "終端機",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "gO4hZ",
+                          "name": "thSpacer",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "2dS51",
+                          "name": "thStatus",
+                          "height": 20,
+                          "fill": "#05966333",
+                          "cornerRadius": 4,
+                          "gap": 4,
+                          "padding": [
+                            0,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "eTuJu",
+                              "name": "thStatusDot",
+                              "fill": "#059669",
+                              "width": 6,
+                              "height": 6
+                            },
+                            {
+                              "type": "text",
+                              "id": "Omb0V",
+                              "name": "thStatusText",
+                              "fill": "#059669",
+                              "content": "成功",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "C263Z",
+                          "name": "thClear",
+                          "fill": "#94A3B8",
+                          "content": "清除",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tfcae",
+                      "name": "Terminal Body",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#F8FAFC",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "of1xK",
+                          "name": "tout1",
+                          "fill": "#94A3B8",
+                          "content": "$ python main.py",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "01uy5",
+                          "name": "tout2",
+                          "fill": "#059669",
+                          "content": "Hello, Python!",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "l50AR",
+                          "name": "tout3",
+                          "fill": "#059669",
+                          "content": "I am learning basic output",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YImIW",
+                          "name": "tout4",
+                          "fill": "#059669",
+                          "content": "This is question 1",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9tNyQ",
+                          "name": "tout5",
+                          "fill": "#94A3B8",
+                          "content": "程式結束，退出碼 0",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X7Oju",
+              "name": "Right AI Sidebar",
+              "width": 360,
+              "height": "fill_container",
+              "fill": "#F1F5F9",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "7e4xZ",
+                  "name": "AI Header",
+                  "width": "fill_container",
+                  "height": 40,
+                  "fill": "#E2E8F0",
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "KM6AP",
+                      "name": "tabScore",
+                      "height": 40,
+                      "fill": "#F1F5F9",
+                      "gap": 6,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dPIFv",
+                          "name": "tabScoreText",
+                          "fill": "#0891B2",
+                          "content": "評分",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "QfRc7",
+                          "name": "tabIndicator",
+                          "fill": "#0891B2",
+                          "width": "fill_container",
+                          "height": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c8C9B",
+                      "name": "tabChat",
+                      "height": 40,
+                      "gap": 6,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zMs8j",
+                          "name": "tabChatText",
+                          "fill": "#94A3B8",
+                          "content": "對話",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Yf7kY",
+                      "name": "tabProgress",
+                      "height": 40,
+                      "gap": 6,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wP2NN",
+                          "name": "tabProgressText",
+                          "fill": "#94A3B8",
+                          "content": "進度",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kNAqJ",
+                  "name": "AI Body",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YURFp",
+                      "name": "Main Score Card",
+                      "width": "fill_container",
+                      "fill": "#E2E8F0",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5LJ5h",
+                          "name": "scoreLabel",
+                          "fill": "#64748B",
+                          "content": "總分",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "w9cNx",
+                          "name": "scoreValue",
+                          "fill": "#0891B2",
+                          "content": "92",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 48,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cO4OB",
+                          "name": "scoreMax",
+                          "fill": "#94A3B8",
+                          "content": "/ 100",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OfaKC",
+                          "name": "scoreBar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#F1F5F9",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 3,
+                              "id": "kVVfe",
+                              "name": "scoreBarFill",
+                              "fill": "#0891B2",
+                              "width": 270,
+                              "height": 6
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2sw3j",
+                      "name": "Sub Scores Grid",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Mpfbw",
+                          "name": "Time Complexity",
+                          "width": "fill_container",
+                          "fill": "#F1F5F9",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "E5ElO",
+                              "name": "stLabel",
+                              "fill": "#64748B",
+                              "content": "時間",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "mHvrJ",
+                              "name": "stVal",
+                              "fill": "#0F172A",
+                              "content": "9.0",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "1pEEp",
+                              "name": "stMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "piBvF",
+                          "name": "Space Complexity",
+                          "width": "fill_container",
+                          "fill": "#F1F5F9",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vUjV8",
+                              "name": "ssLabel",
+                              "fill": "#64748B",
+                              "content": "空間",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "XMMU6",
+                              "name": "ssVal",
+                              "fill": "#0F172A",
+                              "content": "9.5",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "V569Z",
+                              "name": "ssMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WiJjj",
+                      "name": "Sub Scores Row2",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "6pacP",
+                          "name": "Readability",
+                          "width": "fill_container",
+                          "fill": "#F1F5F9",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "e25L9",
+                              "name": "srLabel",
+                              "fill": "#64748B",
+                              "content": "可讀性",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "0aLgx",
+                              "name": "srVal",
+                              "fill": "#0F172A",
+                              "content": "9.0",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dEO46",
+                              "name": "srMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LmFsI",
+                          "name": "Stability",
+                          "width": "fill_container",
+                          "fill": "#F1F5F9",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YVJFL",
+                              "name": "sxLabel",
+                              "fill": "#64748B",
+                              "content": "穩定性",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "zy1Wk",
+                              "name": "sxVal",
+                              "fill": "#0F172A",
+                              "content": "10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "lBi35",
+                              "name": "sxMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7llN2",
+                      "name": "AI Feedback",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#E2E8F0",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZKYAf",
+                          "name": "fbLabel",
+                          "fill": "#64748B",
+                          "content": "AI 回饋",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "Fb7aR",
+                          "name": "fbDivider",
+                          "fill": "#F1F5F9",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "Jil7H",
+                          "name": "fbText",
+                          "fill": "#475569",
+                          "content": "很好！你的程式碼正確地使用 print() 印出了三行內容，輸出格式完全符合預期結果。\n\n建議：你也可以用三引號合併輸出，減少函式呼叫次數。",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "O6fbo",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 28,
+          "fill": "#F1F5F9",
+          "gap": 16,
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "aubZb",
+              "name": "sbTime",
+              "fill": "#64748B",
+              "content": "學習時間：00:12:34",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "yLywh",
+              "name": "sbDiv1",
+              "fill": "#E2E8F0",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "dVs3Q",
+              "name": "sbRuns",
+              "fill": "#64748B",
+              "content": "執行：5 次",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "5wy01",
+              "name": "sbDiv2",
+              "fill": "#E2E8F0",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "R20n8",
+              "name": "sbErrors",
+              "fill": "#64748B",
+              "content": "錯誤：1 次",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "k2cID",
+              "name": "sbDiv3",
+              "fill": "#E2E8F0",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "sretb",
+              "name": "sbFocus",
+              "fill": "#0891B2",
+              "content": "專注：08:22",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "uXzV6",
+              "name": "sbSpacer",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "jogRZ",
+              "name": "sbQuestion",
+              "fill": "#64748B",
+              "content": "Q1/10",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "EAjkj",
+              "name": "sbDiv4",
+              "fill": "#E2E8F0",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "JwRoq",
+              "name": "sbBackend",
+              "fill": "#059669",
+              "content": "後端：就緒",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "x5Re1",
+      "x": 1540,
+      "y": 0,
+      "name": "Desktop Main - Dark Mode",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#0A0F1C",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "n1tmD",
+          "name": "Toolbar",
+          "width": "fill_container",
+          "height": 48,
+          "fill": "#0F172A",
+          "gap": 16,
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Zj03M",
+              "name": "Logo",
+              "fill": "#22D3EE",
+              "content": "PyDiag",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "692eS",
+              "name": "sep1",
+              "fill": "#1E293B",
+              "width": 1,
+              "height": 24
+            },
+            {
+              "type": "text",
+              "id": "4N7Vi",
+              "name": "qLabel",
+              "fill": "#64748B",
+              "content": "顎目",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "UmkDn",
+              "name": "Question Selector",
+              "height": 32,
+              "fill": "#1E293B",
+              "cornerRadius": 6,
+              "gap": 8,
+              "padding": [
+                0,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "n4fMC",
+                  "name": "qText",
+                  "fill": "#0F172A",
+                  "content": "Q1 - Hello Python",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "DaYe6",
+                  "name": "qChevron",
+                  "fill": "#94A3B8",
+                  "content": "v",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "g1SPd",
+              "name": "spacer",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "Ywz27",
+              "name": "Run Button",
+              "height": 32,
+              "fill": "#10B981",
+              "cornerRadius": 6,
+              "gap": 6,
+              "padding": [
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Uya09",
+                  "name": "runIcon",
+                  "fill": "#FFFFFF",
+                  "content": "執行",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0CgkL",
+              "name": "Score Button",
+              "height": 32,
+              "fill": "#22D3EE",
+              "cornerRadius": 6,
+              "gap": 6,
+              "padding": [
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bh0fc",
+                  "name": "scoreText",
+                  "fill": "#FFFFFF",
+                  "content": "AI 評分",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "GUyAv",
+              "name": "sep2",
+              "fill": "#1E293B",
+              "width": 1,
+              "height": 24
+            },
+            {
+              "type": "ellipse",
+              "id": "Jm3FZ",
+              "name": "statusDot",
+              "fill": "#10B981",
+              "width": 8,
+              "height": 8
+            },
+            {
+              "type": "text",
+              "id": "8sSKi",
+              "name": "statusText",
+              "fill": "#94A3B8",
+              "content": "已連線",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "MI8bd",
+              "name": "Theme Toggle",
+              "height": 28,
+              "fill": "#1E293B",
+              "cornerRadius": 14,
+              "gap": 4,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "9W2MZ",
+                  "name": "dtSun",
+                  "width": 24,
+                  "height": 24,
+                  "cornerRadius": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ey9OR",
+                      "name": "dtSunIcon",
+                      "fill": "#64748B",
+                      "content": "Li",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FH5ME",
+                  "name": "dtMoon",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#22D3EE",
+                  "cornerRadius": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O2rvG",
+                      "name": "dtMoonIcon",
+                      "fill": "#0A0F1C",
+                      "content": "Dk",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hZ4w4",
+          "name": "Main Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ex7tM",
+              "name": "Left Sidebar",
+              "width": 280,
+              "height": "fill_container",
+              "fill": "#0F172A",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "D8VOn",
+                  "name": "Sidebar Header",
+                  "width": "fill_container",
+                  "height": 40,
+                  "fill": "#1E293B",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nUsAg",
+                      "name": "shLabel",
+                      "fill": "#64748B",
+                      "content": "顎目詳情",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q4Bi9",
+                      "name": "shSpacer",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "GzeQW",
+                      "name": "shCollapse",
+                      "fill": "#94A3B8",
+                      "content": "<<",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "6p6bp",
+                  "name": "Sidebar Content",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gy9U4",
+                      "name": "Difficulty Badge",
+                      "height": 24,
+                      "fill": "#10B981",
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gJImp",
+                          "name": "diffText",
+                          "fill": "#FFFFFF",
+                          "content": "初級",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "2VFX6",
+                      "name": "Question Title",
+                      "fill": "#FFFFFF",
+                      "content": "Hello Python!",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hIpJs",
+                      "name": "Description",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jBImB",
+                          "name": "descLabel",
+                          "fill": "#64748B",
+                          "content": "顎目說明",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "U0uju",
+                          "name": "descBody",
+                          "fill": "#475569",
+                          "content": "撰寫一個 Python 程式，印出三行內容：\n1. Hello, Python!\n2. I am learning basic output\n3. This is question 1",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NQarZ",
+                      "name": "Test Cases",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cna5O",
+                          "name": "testLabel",
+                          "fill": "#64748B",
+                          "content": "測試案例",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zBaqV",
+                          "name": "Test Case 1",
+                          "width": "fill_container",
+                          "fill": "#1E293B",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iJprh",
+                              "name": "tc1In",
+                              "fill": "#64748B",
+                              "content": "輸入：（無）",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "1TR08",
+                              "name": "tc1Out",
+                              "fill": "#0891B2",
+                              "content": "輸出：Hello, Python!",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "tdkJh",
+                          "name": "Test Case 2",
+                          "width": "fill_container",
+                          "fill": "#1E293B",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "30HYR",
+                              "name": "tc2In",
+                              "fill": "#64748B",
+                              "content": "輸入：（無）",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "hmiVl",
+                              "name": "tc2Out",
+                              "fill": "#0891B2",
+                              "content": "輸出：I am learning...",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LgT3Z",
+                      "name": "Learning Goals",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kRLIR",
+                          "name": "goalsLabel",
+                          "fill": "#64748B",
+                          "content": "學習目標",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jII68",
+                          "name": "goal1",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "padding": [
+                            6,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "f4ZbB",
+                              "name": "g1check",
+                              "fill": "#0891B2",
+                              "content": "o",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "PZMHJ",
+                              "name": "g1text",
+                              "fill": "#475569",
+                              "content": "掌握 print() 函式",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rfdIp",
+                          "name": "goal2",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "padding": [
+                            6,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6ucVT",
+                              "name": "g2check",
+                              "fill": "#0891B2",
+                              "content": "o",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "50wxK",
+                              "name": "g2text",
+                              "fill": "#475569",
+                              "content": "正確使用字串常值",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "L8Exf",
+                          "name": "goal3",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "padding": [
+                            6,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fVIhi",
+                              "name": "g3check",
+                              "fill": "#0891B2",
+                              "content": "o",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "3Ch68",
+                              "name": "g3text",
+                              "fill": "#475569",
+                              "content": "理解程式執行流程",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NFqYN",
+              "name": "Center Panel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#0A0F1C",
+              "layout": "vertical",
+              "gap": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TaU55",
+                  "name": "Editor Panel",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#0A0F1C",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4Fb0R",
+                      "name": "Editor Header",
+                      "width": "fill_container",
+                      "height": 36,
+                      "fill": "#0F172A",
+                      "gap": 12,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "XXEcK",
+                          "name": "ehTab",
+                          "height": 36,
+                          "gap": 6,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "YwLk0",
+                              "name": "ehDot",
+                              "fill": "#22D3EE",
+                              "width": 8,
+                              "height": 8
+                            },
+                            {
+                              "type": "text",
+                              "id": "VU9GH",
+                              "name": "ehFile",
+                              "fill": "#0F172A",
+                              "content": "main.py",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "wJELx",
+                          "name": "ehSpacer",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "246Pz",
+                          "name": "ehLang",
+                          "fill": "#94A3B8",
+                          "content": "Python 3.12",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "leku5",
+                      "name": "Editor Body",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#0A0F1C",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ppxUd",
+                          "name": "line1",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "mIjTj",
+                              "name": "ln1",
+                              "fill": "#94A3B8",
+                              "content": "1",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Nm7Lb",
+                              "name": "code1kw",
+                              "fill": "#0891B2",
+                              "content": "print",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Nghdo",
+                              "name": "code1str",
+                              "fill": "#D97706",
+                              "content": "(\"Hello, Python!\")",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QmWLq",
+                          "name": "line2",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iQugB",
+                              "name": "ln2",
+                              "fill": "#94A3B8",
+                              "content": "2",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Ujoob",
+                              "name": "code2kw",
+                              "fill": "#0891B2",
+                              "content": "print",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "BO9Lo",
+                              "name": "code2str",
+                              "fill": "#D97706",
+                              "content": "(\"I am learning...\")",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "p0Fgd",
+                          "name": "line3",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "HwqC3",
+                              "name": "ln3",
+                              "fill": "#94A3B8",
+                              "content": "3",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "sH3Vh",
+                              "name": "code3kw",
+                              "fill": "#0891B2",
+                              "content": "print",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "6pUFA",
+                              "name": "code3str",
+                              "fill": "#D97706",
+                              "content": "(\"This is Q1\")",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ejnOQ",
+                          "name": "line4",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "padding": [
+                            2,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iWwbw",
+                              "name": "ln4",
+                              "fill": "#94A3B8",
+                              "content": "4",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "rectangle",
+                              "id": "JJvqJ",
+                              "name": "cursor",
+                              "fill": "#22D3EE",
+                              "width": 8,
+                              "height": 16
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "mUImr",
+                  "name": "termDivider",
+                  "fill": "#1E293B",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "VEV7x",
+                  "name": "Terminal Panel",
+                  "width": "fill_container",
+                  "height": 280,
+                  "fill": "#0A0F1C",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yrxnX",
+                      "name": "Terminal Header",
+                      "width": "fill_container",
+                      "height": 32,
+                      "fill": "#0F172A",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wZXQA",
+                          "name": "thLabel",
+                          "fill": "#64748B",
+                          "content": "終端機",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SmMOS",
+                          "name": "thSpacer",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HI5A8",
+                          "name": "thStatus",
+                          "height": 20,
+                          "fill": "#10B98133",
+                          "cornerRadius": 4,
+                          "gap": 4,
+                          "padding": [
+                            0,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "psdvt",
+                              "name": "thStatusDot",
+                              "fill": "#10B981",
+                              "width": 6,
+                              "height": 6
+                            },
+                            {
+                              "type": "text",
+                              "id": "LdPhI",
+                              "name": "thStatusText",
+                              "fill": "#059669",
+                              "content": "成功",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "rHBU5",
+                          "name": "thClear",
+                          "fill": "#94A3B8",
+                          "content": "清除",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ugLEy",
+                      "name": "Terminal Body",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#0A0F1C",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kKMTB",
+                          "name": "tout1",
+                          "fill": "#94A3B8",
+                          "content": "$ python main.py",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o1ad1",
+                          "name": "tout2",
+                          "fill": "#059669",
+                          "content": "Hello, Python!",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "L1F8I",
+                          "name": "tout3",
+                          "fill": "#059669",
+                          "content": "I am learning basic output",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LiqD7",
+                          "name": "tout4",
+                          "fill": "#059669",
+                          "content": "This is question 1",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GMWHQ",
+                          "name": "tout5",
+                          "fill": "#94A3B8",
+                          "content": "程式結束，退出碼 0",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mfKDt",
+              "name": "Right AI Sidebar",
+              "width": 360,
+              "height": "fill_container",
+              "fill": "#0F172A",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zjoPE",
+                  "name": "AI Header",
+                  "width": "fill_container",
+                  "height": 40,
+                  "fill": "#1E293B",
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "33pkP",
+                      "name": "tabScore",
+                      "height": 40,
+                      "fill": "#0F172A",
+                      "gap": 6,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YlUDg",
+                          "name": "tabScoreText",
+                          "fill": "#0891B2",
+                          "content": "評分",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "8t658",
+                          "name": "tabIndicator",
+                          "fill": "#22D3EE",
+                          "width": "fill_container",
+                          "height": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GlkXP",
+                      "name": "tabChat",
+                      "height": 40,
+                      "gap": 6,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YHrmW",
+                          "name": "tabChatText",
+                          "fill": "#94A3B8",
+                          "content": "對話",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iSRsX",
+                      "name": "tabProgress",
+                      "height": 40,
+                      "gap": 6,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ry7Jr",
+                          "name": "tabProgressText",
+                          "fill": "#94A3B8",
+                          "content": "進度",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zKZ24",
+                  "name": "AI Body",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lM2hq",
+                      "name": "Main Score Card",
+                      "width": "fill_container",
+                      "fill": "#1E293B",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d5QDt",
+                          "name": "scoreLabel",
+                          "fill": "#64748B",
+                          "content": "總分",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "J6NO2",
+                          "name": "scoreValue",
+                          "fill": "#22D3EE",
+                          "content": "92",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 48,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YPKmQ",
+                          "name": "scoreMax",
+                          "fill": "#94A3B8",
+                          "content": "/ 100",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PNvs4",
+                          "name": "scoreBar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#0F172A",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 3,
+                              "id": "GBRAx",
+                              "name": "scoreBarFill",
+                              "fill": "#22D3EE",
+                              "width": 270,
+                              "height": 6
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ted5J",
+                      "name": "Sub Scores Grid",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QvLd9",
+                          "name": "Time Complexity",
+                          "width": "fill_container",
+                          "fill": "#0F172A",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "7CpYD",
+                              "name": "stLabel",
+                              "fill": "#64748B",
+                              "content": "時間",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "NKhYI",
+                              "name": "stVal",
+                              "fill": "#FFFFFF",
+                              "content": "9.0",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "OwEnE",
+                              "name": "stMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "4ac4C",
+                          "name": "Space Complexity",
+                          "width": "fill_container",
+                          "fill": "#0F172A",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PhAjJ",
+                              "name": "ssLabel",
+                              "fill": "#64748B",
+                              "content": "空間",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "jKbNC",
+                              "name": "ssVal",
+                              "fill": "#FFFFFF",
+                              "content": "9.5",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "FvG5F",
+                              "name": "ssMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ljZWM",
+                      "name": "Sub Scores Row2",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cKDMk",
+                          "name": "Readability",
+                          "width": "fill_container",
+                          "fill": "#0F172A",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Oi2vB",
+                              "name": "srLabel",
+                              "fill": "#64748B",
+                              "content": "可讀性",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "gbQrc",
+                              "name": "srVal",
+                              "fill": "#FFFFFF",
+                              "content": "9.0",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "46fbK",
+                              "name": "srMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CAJJp",
+                          "name": "Stability",
+                          "width": "fill_container",
+                          "fill": "#0F172A",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "38BX8",
+                              "name": "sxLabel",
+                              "fill": "#64748B",
+                              "content": "穩定性",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "7qzCx",
+                              "name": "sxVal",
+                              "fill": "#FFFFFF",
+                              "content": "10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 20,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "LHFfC",
+                              "name": "sxMax",
+                              "fill": "#94A3B8",
+                              "content": "/10",
+                              "fontFamily": "JetBrains Mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "71ECQ",
+                      "name": "AI Feedback",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#1E293B",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kBvl1",
+                          "name": "fbLabel",
+                          "fill": "#64748B",
+                          "content": "AI 回饋",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "187Bb",
+                          "name": "fbDivider",
+                          "fill": "#0F172A",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "FGtxt",
+                          "name": "fbText",
+                          "fill": "#94A3B8",
+                          "content": "很好！你的程式碼正確地使用 print() 印出了三行內容，輸出格式完全符合預期結果。\n\n建議：你也可以用三引號合併輸出，減少函式呼叫次數。",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bi1Ny",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 28,
+          "fill": "#0F172A",
+          "gap": 16,
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "FJ2h7",
+              "name": "sbTime",
+              "fill": "#64748B",
+              "content": "學習時間：00:12:34",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "krc4i",
+              "name": "sbDiv1",
+              "fill": "#1E293B",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "Ns6hQ",
+              "name": "sbRuns",
+              "fill": "#64748B",
+              "content": "執行：5 次",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "ODDWw",
+              "name": "sbDiv2",
+              "fill": "#1E293B",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "2feN3",
+              "name": "sbErrors",
+              "fill": "#64748B",
+              "content": "錯誤：1 次",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "cOq9i",
+              "name": "sbDiv3",
+              "fill": "#1E293B",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "Lt1oT",
+              "name": "sbFocus",
+              "fill": "#22D3EE",
+              "content": "專注：08:22",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "ryXmB",
+              "name": "sbSpacer",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "oYBQo",
+              "name": "sbQuestion",
+              "fill": "#64748B",
+              "content": "Q1/10",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "biBkC",
+              "name": "sbDiv4",
+              "fill": "#1E293B",
+              "width": 1,
+              "height": 14
+            },
+            {
+              "type": "text",
+              "id": "WvVZS",
+              "name": "sbBackend",
+              "fill": "#10B981",
+              "content": "後端：就緒",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
