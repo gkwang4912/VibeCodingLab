@@ -8,6 +8,12 @@
 - **使用對象**：Python 程式語言初學者、程式設計課程學生。
 - **專案性質**：Web Application (前後端分離架構)。
 
+前端畫面演示：
+<img width="1951" height="1097" alt="image" src="https://github.com/user-attachments/assets/74512cfd-da6d-4f0d-8ae5-c6f78ebfd1c6" />
+深色模式：
+<img width="1947" height="1099" alt="image" src="https://github.com/user-attachments/assets/deffe7d8-93d2-4ce1-a23a-fea5e8bfacf7" />
+
+
 ## 系統架構說明 (Architecture Overview)
 
 本系統採用前後端分離設計。後端使用 Flask 框架處理 API 請求、程式碼安全性檢查與執行；前端使用純 HTML/CSS/JS 構建。外部依賴包括 OpenAI API (用於代碼分析) 與 Google Sheets (用於題目管理與成績記錄)。
@@ -248,3 +254,4 @@ python server.py
 
 - **成績備份機制**：系統會優先嘗試寫入 Google Apps Script Web App。若失敗，會自動降級並寫入 `tool/scores_backup.json`，確保資料不丟失。
 - **快取機制**：題目資料預設快取 30 分鐘 (`server.py` 中的 `CACHE_EXPIRE_MINUTES`)，可透過 `/api/questions/refresh` 強制更新。
+
