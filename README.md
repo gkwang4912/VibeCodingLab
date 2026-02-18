@@ -13,6 +13,9 @@
 深色模式：
 <img width="1947" height="1099" alt="image" src="https://github.com/user-attachments/assets/deffe7d8-93d2-4ce1-a23a-fea5e8bfacf7" />
 
+演示影片：
+
+[![演示影片](https://img.youtube.com/vi/K4EG9JZTvEc/maxresdefault.jpg)](https://www.youtube.com/watch?v=K4EG9JZTvEc)
 
 ## 系統架構說明 (Architecture Overview)
 
